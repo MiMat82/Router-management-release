@@ -15,6 +15,8 @@
   <img src="docs/screenshots/01-dashboard.png" alt="Dashboard" width="900">
 </p>
 
+> **About the screenshots:** they were taken with the app's built-in **demo router**, not a real network. Every address, MAC, device name and Wi-Fi name in them is made up. The public IPs (`203.0.113.x`, `198.51.100.x`, `2001:db8::`) come from ranges reserved for documentation, so they can't belong to anyone.
+
 ---
 
 ## Contents
