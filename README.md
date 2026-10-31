@@ -272,6 +272,8 @@ You can check by hand, or turn automatic checks off, in **Settings → Updates**
 
 These tools run on your PC and don't depend on the router brand: **ping, traceroute, DNS comparison, speed test with bufferbloat grade, network scanner, port scanner and Wake-on-LAN**. Monitoring, alerts, config snapshots and automation work on top of whatever your router supports.
 
+The app opens after you connect to a router. If yours isn't supported yet, connect to the demo router and these tools still test your real network. A tools-only start without a router is planned.
+
 ### Computers
 
 | Platform | Status |
