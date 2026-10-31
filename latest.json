@@ -1,11 +1,11 @@
 {
-  "version": "0.4.0",
-  "notes": "- Fixes logging in to newer TP-Link firmware (such as the Archer AX12) that answered \"HTTP 403\". The app now sends the login request the way the router's own page does, follows a redirect to https, and tries the other known formats.\n- If a router still refuses the login, the error lists what it answered at each step, with a Copy error details button.\n- The login screen asks for the router's local password, and explains that it isn't your TP-Link ID.\n- New Install OpenWrt page (under Router): checks your exact model and hardware version against OpenWrt's official list, downloads the official image and verifies its checksum, saves a settings snapshot, then installs through the router's own upgrade function. Includes a recovery guide. Routers OpenWrt doesn't support are refused.",
-  "pub_date": "2026-10-31T18:25:02Z",
+  "version": "0.4.1",
+  "notes": "- Updating no longer stops with \"Failed to kill Router Manager\". The app now closes completely, including the tray icon, before the installer runs, and reopens afterwards.\n- Starting the app while it is already running (for example in the tray) now opens the existing window instead of a second copy.\n- Login on newer firmware: the app opens the router's start page first like a browser, and tries the signing step in both request styles. When the router still refuses, the error lists every login step and what the router answered, so it can be fixed for that model.\n- Clearer password hint on the login screen.",
+  "pub_date": "2026-10-31T22:03:16Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRWVGNVY5UUg1U0ZiRCtUT2VYNU04Wnp2U2djRk5CWFVoeTArSURDYkNsMnhTV3ZRUE00YWZoNys2R3lVcUF3VkpLWWtpUHVzelI4akpWanB3YW5VTWdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDcxMTAyCWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC4wClAzQWgvZUZvNDZWaEtnV3Vhb3hPVng4UUVUV2NVWlFoOWhobWxuK3g4SE5MSWVWOHpLU1QrajNlR1VMc3BKQTdxazU1WkVXMERZbkdsWElyclY2NUFBPT0K",
-      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.0/RouterManager_0.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVZLRnRBNnFHZDhDUGNuR2VLeG15TEI4QnNyc2dVUXlrNkZlbnh0YTMvOXIvMEZSeFJPLzFPWVpqTGFNRFR3cmk2bUhyNlhCUlMvYVBXblNIZ2VUOWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDg0MTk2CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC4xClRNRFVHTy93OUgvdExUdWZxTkp2eVVZczIwTGZWWTRocXRNUWFoQlhHNmdteURWMm9sdTFuV243VzBKbkxXL2lmSmtpZDlXNE9NQ2FUYURTOHRTREN3PT0K",
+      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.1/RouterManager_0.4.1_x64-setup.exe"
     }
   }
 }
