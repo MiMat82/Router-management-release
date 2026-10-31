@@ -243,8 +243,43 @@ You can check by hand, or turn automatic checks off, in **Settings → Updates**
 
 ## Supported routers
 
-| Router family | Status |
+### Which routers work
+
+| Router | Status | How to tell |
+|---|---|---|
+| **TP-Link Archer**, current web interface: Archer C6, C64, C80, A6, A7, AX10, AX20, AX21, AX23, AX50, AX55, AX73, AX3000 and similar models sold since about 2018 | **Supported.** Both the encrypted firmware (most current versions) and the older plain firmware | After you log in to the router in a browser, the address bar shows `…/cgi-bin/luci/;stok=…` |
+| Demo router (built in) | Every feature, for trying the app safely | Password `demo` |
+| TP-Link **Deco** mesh | Planned | Managed with the Deco phone app, no web login page |
+| TP-Link **MR** 4G/LTE routers, older routers with the `userRpm` web page (e.g. TL-WR841N, early Archer C7/C50) | Planned | Address bar shows `…/userRpm/…` |
+| Other brands (ASUS, Netgear, Linksys, ISP boxes) | Not supported | |
+
+> **Honest status:** the Archer support is built from TP-Link's web interface and tested against a simulated router. It has not yet been checked on every model. If something on your model doesn't work, open an [issue](https://github.com/MiMat82/Router-management-release/issues) with your **model**, **hardware version** and **firmware version** (all three are on the Dashboard).
+
+### What works on a supported Archer
+
+| Area | On Archer routers |
 |---|---|
+| Dashboard, live traffic, CPU and memory | ✔ |
+| Connected devices, block and unblock | ✔ |
+| Wi-Fi (2.4 / 5 GHz) and guest networks | ✔ |
+| DHCP, address reservations | ✔ |
+| Port forwarding, UPnP, DMZ | ✔ |
+| Firmware info and TP-Link update check, reboot, LEDs, system log | ✔ |
+| API explorer | ✔ |
+| QoS, parental controls, scheduled reboot, backup and restore, admin password | Varies by model and firmware. The app only shows what your router reports, so missing items are hidden rather than broken |
+
+### What works with any network
+
+These tools run on your PC and don't depend on the router brand: **ping, traceroute, DNS comparison, speed test with bufferbloat grade, network scanner, port scanner and Wake-on-LAN**. Monitoring, alerts, config snapshots and automation work on top of whatever your router supports.
+
+### Computers
+
+| Platform | Status |
+|---|---|
+| Windows 10 and 11 (64-bit) | Supported |
+| Android | Planned |
+
+---|---|
 | TP-Link **Archer** routers with the modern web interface (address bar shows `…/cgi-bin/luci/…` after login), encrypted and older firmware | Supported. Features appear according to what your model reports |
 | Demo router (built in) | Every feature, for trying the app safely |
 | Deco mesh, MR (4G/LTE) routers, older routers with the `userRpm` interface | Planned |
