@@ -1,0 +1,11 @@
+{
+  "version": "0.3.0",
+  "notes": "- One-click updates: the app checks for new versions and shows a small \"Update available\" window. Update now downloads, verifies the signature, installs and restarts.\n- The menu sections (Overview, Network, Admin tools, Router) fold open and closed, and the app remembers your choice.\n- Settings has an Updates card with the installed version, Check for updates, and an option to turn automatic checks off.",
+  "pub_date": "2026-10-31T15:21:25Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRWIrNEJNa1hXK3Y4Z2lnYnF3ci9HOE15ZGVneU02bmQ0ZlFHYTl1bllOSDJ6RExtU0U1Q0FYanpSMUErSlBPbnVxcHZXT3l2SVliQnN0cE0wLzY3emdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDYwMDg1CWZpbGU6Um91dGVyIE1hbmFnZXJfMC4zLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMy4wClRqYk1XK0FycUwrZnN3ZXd4ZnQ0TUM1eGtheGxkTSszZkF6OWtlZU93N0tpSUc5WUd3YTRVU1BHcjJmRDBUeVNyNStGMFZ5a2dkTnZmb01TVm1CakNnPT0K",
+      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.3.0/RouterManager_0.3.0_x64-setup.exe"
+    }
+  }
+}
