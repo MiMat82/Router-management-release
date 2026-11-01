@@ -1,11 +1,11 @@
 {
-  "version": "0.4.2",
-  "notes": "- Login on newer TP-Link firmware: when the router answers the encrypted login with an empty \"HTTP 403\", the app now tries the other known login forms in turn (different credential hash, password padding, length counting, without the Origin header), each with a fresh handshake. The form that works is remembered for the session.\n- Requests after login are signed the way the router's own web page signs them.\n- The error lists every form that was tried.",
-  "pub_date": "2026-11-01T06:45:08Z",
+  "version": "0.4.3",
+  "notes": "- Supports the newer TP-Link web interface (for example Archer AX12 firmware 1.5): RSA-OAEP encryption, SHA-256 credential hash, the \"12345\" token before login, and HMAC-signed requests after login. Older routers keep working with the previous method; the app finds the right one by itself.",
+  "pub_date": "2026-11-01T07:29:19Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVltbDhXNGV5dGd6aFZINVVHMmgwUGNNQ2I2Sk1XUXMyUFJ6TU83TC9NV1FCMGFvSHpQRFNlRVN0SUxjellUb1ZrT0JWTUJmWlExclNtb1p1ZVFQM1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTE1NTA4CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC4yClYzNlJOSHJUWkNuV3ZrWEJaZFNxMm51S01xL2Z4Y1ZoaVpZZFhQMFJEN2F1QnRNU1NZSTF5MU9DL090TXJBZ1kxQ015d295aVhHcWZBVkRxa1VDZ0JRPT0K",
-      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.2/RouterManager_0.4.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVFQbTI3UVZ3ZVNFUHdLb0xWZEVhOUtFa1hvUCs3L2NPRTdZK1BnV3krSVk3eWpKQXVnbkorZnhGZ2FvYkJSVk8zei9WbWFXcHdKeERQQWR0OGloeWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTE4MTU4CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC4zClpLTXVWU0pOOUwreEJGRW9WVmwzaWNGZ2JMdjZKVHBybHpLaVdhb0dMOTNxWVBVL3FaUDJvdGF3dG9DR01wcUFtNkVQSEYva3JTUkg2SXovU0hYMkJBPT0K",
+      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.3/RouterManager_0.4.3_x64-setup.exe"
     }
   }
 }
