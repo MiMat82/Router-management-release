@@ -1,11 +1,11 @@
 {
-  "version": "0.4.3",
-  "notes": "- Supports the newer TP-Link web interface (for example Archer AX12 firmware 1.5): RSA-OAEP encryption, SHA-256 credential hash, the \"12345\" token before login, and HMAC-signed requests after login. Older routers keep working with the previous method; the app finds the right one by itself.",
-  "pub_date": "2026-11-01T07:29:19Z",
+  "version": "0.4.4",
+  "notes": "- Fixes login on the newer TP-Link web interface (Archer AX12 and similar) when the Username box is left blank. The router always signs in to its local \"admin\" account, so the app now hashes the credential against \"admin\" instead of the empty box. Before this, the router would accept and decrypt the login and still report the password as incorrect.",
+  "pub_date": "2026-11-01T08:58:27Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVFQbTI3UVZ3ZVNFUHdLb0xWZEVhOUtFa1hvUCs3L2NPRTdZK1BnV3krSVk3eWpKQXVnbkorZnhGZ2FvYkJSVk8zei9WbWFXcHdKeERQQWR0OGloeWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTE4MTU4CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC4zClpLTXVWU0pOOUwreEJGRW9WVmwzaWNGZ2JMdjZKVHBybHpLaVdhb0dMOTNxWVBVL3FaUDJvdGF3dG9DR01wcUFtNkVQSEYva3JTUkg2SXovU0hYMkJBPT0K",
-      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.3/RouterManager_0.4.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVlNbXM2MVRaRXNPTjJWRjFVbWZmS1F6SDJLbHl1NUZWczYwa0FuLzZCc1BTeWovRmYzWCtZTXdmVkxXell6RFEyTVNJeTdoUVg0d3NDN2pOdU53NlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTIzNTA3CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC40CkFhZkFLT3h3QkxMaWdQb2hCem43NTNYS1BCYVp2eHN6bTZKTHNjUHpaYXRQczhaOHN3YmU4aFc4RFJ4RmtpL2VrREk3STRxSGVVMEdjY3dEQW55QkRRPT0K",
+      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.4/RouterManager_0.4.4_x64-setup.exe"
     }
   }
 }
