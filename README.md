@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.1/RouterManager_0.4.1_x64-setup.exe"><img alt="Download version 0.3.0" src="https://img.shields.io/badge/download-v0.4.1-0b84c6"></a>
+  <a href="https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.2/RouterManager_0.4.2_x64-setup.exe"><img alt="Download version 0.3.0" src="https://img.shields.io/badge/download-v0.4.2-0b84c6"></a>
   <img alt="Windows 10 and 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0b84c6">
   <img alt="Built with Rust" src="https://img.shields.io/badge/built%20with-Rust-b7410e">
   <img alt="Auto-updates" src="https://img.shields.io/badge/updates-automatic%20%26%20signed-1f9d55">
@@ -35,7 +35,7 @@
 
 ## Download and install
 
-1. Download the installer: **[RouterManager_0.3.0_x64-setup.exe](https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.1/RouterManager_0.4.1_x64-setup.exe)**. If your browser blocks `.exe` downloads, take the **[.zip](https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.1/RouterManager_0.4.1_x64-setup.zip)** instead; it has the same file inside. Older versions are in [downloads](downloads).
+1. Download the installer: **[RouterManager_0.3.0_x64-setup.exe](https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.2/RouterManager_0.4.2_x64-setup.exe)**. If your browser blocks `.exe` downloads, take the **[.zip](https://github.com/MiMat82/Router-management-release/raw/main/downloads/v0.4.2/RouterManager_0.4.2_x64-setup.zip)** instead; it has the same file inside. Older versions are in [downloads](downloads).
 2. Run it. If Windows SmartScreen shows *"Windows protected your PC"*, click **More info → Run anyway**. This happens because the installer isn't code-signed with a paid certificate yet. Updates *are* cryptographically signed (see [Updates](#updates)).
 3. Start **Router Manager** from the Start menu.
 
