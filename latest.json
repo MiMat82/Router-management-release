@@ -1,11 +1,11 @@
 {
-  "version": "0.4.4",
-  "notes": "- Fixes login on the newer TP-Link web interface (Archer AX12 and similar) when the Username box is left blank. The router always signs in to its local \"admin\" account, so the app now hashes the credential against \"admin\" instead of the empty box. Before this, the router would accept and decrypt the login and still report the password as incorrect.",
-  "pub_date": "2026-11-01T08:58:27Z",
+  "version": "0.4.5",
+  "notes": "- Fixes login on the newer TP-Link web interface (Archer AX12 and similar). The app was scrambling the login password with the newer \"OAEP\" RSA padding, but this firmware expects the older \"PKCS#1 v1.5\" padding, so the router decrypted everything else and still reported a wrong password. The app now uses PKCS#1 v1.5 with a SHA-256 credential hash and the placeholder token for this firmware, and still falls back to the other methods for other routers.",
+  "pub_date": "2026-11-01T09:32:24Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRVlNbXM2MVRaRXNPTjJWRjFVbWZmS1F6SDJLbHl1NUZWczYwa0FuLzZCc1BTeWovRmYzWCtZTXdmVkxXell6RFEyTVNJeTdoUVg0d3NDN2pOdU53NlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTIzNTA3CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC40CkFhZkFLT3h3QkxMaWdQb2hCem43NTNYS1BCYVp2eHN6bTZKTHNjUHpaYXRQczhaOHN3YmU4aFc4RFJ4RmtpL2VrREk3STRxSGVVMEdjY3dEQW55QkRRPT0K",
-      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.4/RouterManager_0.4.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSUVptTmU2OTNPRWVmemt6OXBMYTduZmdUb1A1QmxmTktRekZOTWxPYm51Z2cyZ0V5eG8xWnB3SFdQbk9QR1huanFUQTdwSG5MS3JkZldFOG5HWmVFRUVudForSi9rbFFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTI1NTQ0CWZpbGU6Um91dGVyIE1hbmFnZXJfMC40LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNC41Cm4xY284MnRFL3hzbUlGZ3J1RW9XQlhyTE1qdEVxaVFJblZpOEJQNG55c1p4TXdlRTd2ZlBGWlYrWmVyMmxHT0t6N0s1Uk91UUZwVXQyMkRiUHd2dkNnPT0K",
+      "url": "https://raw.githubusercontent.com/MiMat82/Router-management-release/main/downloads/v0.4.5/RouterManager_0.4.5_x64-setup.exe"
     }
   }
 }

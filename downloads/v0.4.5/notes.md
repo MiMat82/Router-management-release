@@ -1,0 +1,2 @@
+
+- Fixes login on the newer TP-Link web interface (Archer AX12 and similar). The app was scrambling the login password with the newer "OAEP" RSA padding, but this firmware expects the older "PKCS#1 v1.5" padding, so the router decrypted everything else and still reported a wrong password. The app now uses PKCS#1 v1.5 with a SHA-256 credential hash and the placeholder token for this firmware, and still falls back to the other methods for other routers.
